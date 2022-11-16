@@ -144,6 +144,31 @@ Word的32个比特存储空间中的25个比特用于存储对象的哈希码，
 ​		<font color="#dd0000">JDK6 Update 24</font>之后的规则变为只要 <font color="#00dd00">老年代的连续空间大于新生代对象总大小或者历次晋升的平均大小，就会进行Minor GC，否则进行Full GC</font> 。
 
 
+# 第4章 虚拟机性能监控、故障处理工具
+## 4.1 概述
+## 4.2 基础故障处理工具
+### 4.2.1 jps 虚拟机进程状况工具
+jps(JVM Process Status Tools)
+可以列出正在运行的虚拟机进程，并显示虚拟机执行主类(Main Classk,main()函数所在的类)名称以及这些进程的本地虚拟机唯一ID(LVMID,Local Virtual Machine Identifer).LVMID于操作系统的进程ID(PID,Process Identifier)是一致的。
+
+### 4.2.2 jstat 虚拟机统计信息监视工具
+jstat(JVM Statistics Monitoring Tool)
+用于监视虚拟机各种运行状态信息的命令工具。
+
+### 4.2.3 jinfo Java 配置信息工具
+jinfo(Configuration Info for java)
+作用:实时查看和调整虚拟机各项参数
+
+### 4.2.4 jmap Java内存映像工具
+jmap(Menory Map for java)
+
+用于生成堆转储快照
+
+### 4.2.5 jhat 虚拟机堆转储快照分析工具
+
+### 4.2.6 jstact Java堆栈跟踪工具
+jstack(Stack Trace for java)
+用于生成虚拟机当前时刻堆线程快照
 
 # 第7章 虚拟机类加载机制
 
