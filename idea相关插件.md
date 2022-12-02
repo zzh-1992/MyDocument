@@ -36,3 +36,9 @@
 
 [Scala](https://plugins.jetbrains.com/plugin/1347-scala)
 
+## 10.SequenceDiagram
+[SequenceDiagram](https://plugins.jetbrains.com/plugin/8286-sequencediagram)
+
+## 11.Diagrams.net Integration
+[Diagrams.net Integration](https://plugins.jetbrains.com/plugin/15635-diagrams-net-integration)
+
