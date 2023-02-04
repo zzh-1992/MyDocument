@@ -138,6 +138,8 @@ https://github.com/zzh-1992/rear/commit/d757b7c2604f7ea0e2fa2ba66907df902b97fdab
 - github个人仓库
   https://github.com/zzh-1992/MyDocument/commit/69bfac36cfd3b3e691ecd62c280a3008bc0b46b1
 
+## 6.4 SpringCloud HystrixCommand动态配置
+- https://github.com/zzh-1992/Microservices/commit/4cd892f11b19f3e915d97617918d4cd1fd61c5c9
 
 
 #  7.0 文件读取工具
