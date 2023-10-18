@@ -304,7 +304,8 @@ jstack(Stack Trace for java)
 ## 12.2 硬件的效率于一致性
 
 - "内存模型"，可以理解为在特定操作协议下，对特定的内存或高速缓存进行读写访问的过程抽象。
-  ![img_1.png](处理器-高速缓存-主内存的交互关系.png)
+
+![img_1.png](处理器-高速缓存-主内存的交互关系.png)
 
 ## 12.3 Java内存模型
 
@@ -313,7 +314,8 @@ jstack(Stack Trace for java)
 - Java内存模型的主要目的是<font color="#00dd00">定义程序中各种变量的访问规则</font>。
 
 - Java内存模型规定所有变量都存储在主内存(Main Memory),线程的工作内存保存了被该线程使用的变量的主内存副本，线程对变量的所有操作都必须在工作内存中进行,而不能直接读写主内存中的数据。不同线程之间也无法直接访问对方工作内存中的变量，线程间变量值的传递均需要通过主内存来完成。
-  ![img.png](线程-主内存-工作内存三者的交互关系.png)
+
+![img.png](线程-主内存-工作内存三者的交互关系.png)
 
 ### 12.3.2 内存间交互操作
 
@@ -322,8 +324,11 @@ jstack(Stack Trace for java)
 当一个变量被定义成volatile之后，它将具备两项特性：
 
 - 保证此变量对所有线程对可见性。这里对可见性是指当一条线程修改了这个变量对值，新值对于其他线程来说是可以立即得知。
-  <img src="Volatile的原理和实现机制.png" alt="img.png" style="zoom:90%;" />
-  (详情参考:[Volatile的原理和实现机制](https://github.com/zzh-1992/MyDocument/commit/c027a416bc185544fd6cf9e7774314507d7f6586))
+
+![Volatile的原理和实现机制.png](Volatile的原理和实现机制.png)
+
+(详情参考:[Volatile的原理和实现机制](https://github.com/zzh-1992/MyDocument/commit/c027a416bc185544fd6cf9e7774314507d7f6586))
+
 - 禁止指令重排序优化
 
 ### 12.3.4 针对long和double型变量的特殊规则
