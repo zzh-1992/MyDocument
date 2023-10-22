@@ -30,3 +30,49 @@
     }
 ```
 
+## 2、幂等性
+### 2.0 官方文档说明(如何实现幂等)
+- 原文:To achieve this, the broker assigns each producer an ID and deduplicates messages using a sequence number that is sent by the producer along with every message
+- 译文:为了实现这一点，代理为每个生产者分配一个ID，并使用生产者随每个消息一起发送的序列号来删除重复的消息
+
+    Prior to 0.11.0.0, if a producer failed to receive a response indicating that a message was committed, it had little choice but to resend the message. This provides at-least-once delivery semantics since the
+    message may be written to the log again during resending if the original request had in fact succeeded. Since 0.11.0.0, the Kafka producer also supports an idempotent delivery option which guarantees that resending
+    will not result in duplicate entries in the log. <font color = yellow size=5 face="STCAIYUN">  To achieve this, the broker assigns each producer an ID and deduplicates messages using a sequence number that is sent by the producer along with every message.</font>
+    Also beginning with 0.11.0.0, the producer supports the ability to send messages to multiple topic partitions using transaction-like semantics: i.e. either all messages are successfully written or none of them are.
+    The main use case for this is exactly-once processing between Kafka topics (described below).
+
+### 2.1 源码注释-幂等生产者、事物生产者
+```html
+  From Kafka 0.11, the KafkaProducer supports two additional modes: the idempotent producer and the transactional producer.
+  The idempotent producer strengthens Kafka's delivery semantics from at least once to exactly once delivery. In particular
+  producer retries will no longer introduce duplicates. The transactional producer allows an application to send messages
+  to multiple partitions (and topics!) atomically.
+```
+### 2.2 源码注释-幂等配置说明
+
+  To enable idempotence, the <font color = yellow>enable.idempotence</font> configuration must be set to true. If set, the
+  <font color = yellow>retries</font> config will default to <font color = yellow>Integer.MAX_VALUE</font> and the <font color = yellow>acks</font> config will
+  default to <font color = yellow>all</font>. There are no API changes for the idempotent producer, so existing applications will
+  not need to be modified to take advantage of this feature.	
+
+
+### 2.2 源码注释-幂等配置检查
+```java
+    private static short configureAcks(ProducerConfig config, Logger log) {
+        // 判断是否存在acks等key(是否存在acks配置)
+        boolean userConfiguredAcks = config.originals().containsKey(ProducerConfig.ACKS_CONFIG);
+        short acks = Short.parseShort(config.getString(ProducerConfig.ACKS_CONFIG));
+
+        // 如果配置了幂等性处理
+        if (config.idempotenceEnabled()) {
+            if (!userConfiguredAcks)
+                log.info("Overriding the default {} to all since idempotence is enabled.", ProducerConfig.ACKS_CONFIG);
+            else if (acks != -1)
+                // 当开启幂等 && acks != all/-1 提示异常信息
+                throw new ConfigException("Must set " + ProducerConfig.ACKS_CONFIG + " to all in order to use the idempotent " +
+                        "producer. Otherwise we cannot guarantee idempotence.");
+        }
+        return acks;
+    }
+```
+
