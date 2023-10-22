@@ -76,3 +76,24 @@
     }
 ```
 
+## 2.3 事务
+### 开启kafka事务、幂等(源码注释)
+- 原文:
+<p>
+ To use the transactional producer and the attendant APIs, you must set the <code>transactional.id</code>
+ configuration property. If the <code>transactional.id</code> is set, idempotence is automatically enabled along with
+ the producer configs which idempotence depends on. Further, topics which are included in transactions should be configured
+ for durability. In particular, the <code>replication.factor</code> should be at least <code>3</code>, and the
+ <code>min.insync.replicas</code> for these topics should be set to 2. Finally, in order for transactional guarantees
+ to be realized from end-to-end, the consumers must be configured to read only committed messages as well.
+</p>
+
+- 译文:
+<p>
+    若要使用事務生產者和相關 API，您必須設定 <code>transactional.id</code> 配置屬性。如果設定了 <code>transactional.id</code>，
+    則會自動啟用冪等性以及冪等性所依賴的生產者設定。此外，應配置交易中包含的主題以實現持久性。
+    特別是，<code>replication.factor</code> 應至少為 <code>3</code>，並且這些主題的 <code>min.insync.replicas</code> 應設定為 2。
+    為了實現端到端的事務保證，消費者也必須配置為只讀取已提交的訊息。
+</p>
+
+
