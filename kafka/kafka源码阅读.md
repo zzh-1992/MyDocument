@@ -56,7 +56,7 @@
   not need to be modified to take advantage of this feature.	
 
 
-### 2.2 源码注释-幂等配置检查
+### 2.3 源码注释-幂等配置检查
 ```java
     private static short configureAcks(ProducerConfig config, Logger log) {
         // 判断是否存在acks等key(是否存在acks配置)
@@ -75,6 +75,9 @@
         return acks;
     }
 ```
+
+### 2.4 Kafka — Idempotent Producer And Consumer
+https://medium.com/@shesh.soft/kafka-idempotent-producer-and-consumer-25c52402ceb9
 
 ## 2.3 事务
 ### 开启kafka事务、幂等(源码注释)
