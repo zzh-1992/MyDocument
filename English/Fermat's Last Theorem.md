@@ -355,6 +355,311 @@ In theory ,you could prove Fermat by proving Taniyama,but only if Frey was right
 
 Frey`s idea became known ad epsilon conjecture and everyone tried to check it.
 
+One year later, in San Francisco, there was a breakthrough.
+
+I saw BARRY MAZUR on the campus and I said let`s go for a cup of coffee. and we sat down for cappuccinos at this cafe.
+
+and I looked at Barry and I said you know,I`m trying to generalise what I`ve done so that we can prove.
+
+the full strength of Serre`s epsillon conjecture.
+
+Barry kooked at me and said well you`ve done it already, all you have to do is add on some extra gamma zero of m structure.
+
+and run through your argument and it still works,and that gives everything you need,
+
+and this had never occurred to me as simple as it sounds.
+
+I looked at Barry,I looked to my cappuccino,I looked back at Barry and said my Fod,you`re absolutely right
+
+Ken`s ideas was brilliant.
+
+I was at a friend`s house sipping iced tea early in the evening
+
+and he just mentioned casually in the middle of a conversion:by the way,do you hear that Ken has proved  the epsilon conjecture?
+
+And I was just electrified.
+
+I knew that moment the course of my life was changing,because this meant that to prove Fermat`s last theorem,
+
+I just had to prove Taniyama-Shimura conjecture.
+
+From that moment that was what I was working on.
+
+I just kenw I would go home and work ont th Taniyama-Shimura conjecture.
+
+Andrew abandoned all his other research.He cut himself off from the rest of the wold and for the next seven years
+
+he concentrated solely on his childhood passion.I never use a computer,I sometimes might scribble,I do doodles,
+
+I start trying to find patterns really,so I`m doing calculations,which try to explain some little piece of mathematics
+
+and I`m trying to fit it in with some previous broad conceptual understanding of some branch of mathematics.
+
+Sometimes that`ll involve going and looking up in a book to see how it`s done there,
+
+Sometimes is`s a question of modifying things a bit,sometimes doing a little extra calculation,
+
+and sometimes you realise that nothing ths`s ever been done before is any use at all.
+
+and you just have to find something completely new.and it`s a mystery where it comes from.
+
+I must confess I did not think that the Shimura-Taniyama conjecture was accessible to proof a present. 
+
+I thought I probably wouldn`t see a proof im my lifetime.
+
+I was one the vast majority of  people who believe that the Shimura-Taniyama conjecture was just completely inaccessible,
+
+and I didn`t bother to prove it,even think about trying to prove it.
+
+ANDREW WILES is probably one of the few people on earth who had the audacity to dream that you can actually go and prove
+this conjecture.
+
+In this case certainly for the first several years I had no fear of competition.
+
+I simply didn`t think I or any one else had any real idea how to do it.
+
+Andrew was embarking on one of the most complex calculations in history.
+
+For the fist two years,his did nothing but immerse himself in the problem.Trying to find a strategy which might work.
+
+So it was now known that Taniyama-Shimura implied Fermat`s last theorem.
+
+What does Taniyama-Shimura say?
+
+It says that all elliptic curves should be modular
+
+Well this was an old problem,been around for 20 years and lots of people would try to solve it.
+
+Now one way of looking at it is that you have all elliptic curves and then you have the modular elliptic curves.
+
+and you want to prove that there are the same number of each.
+
+Now of course you`re talking about infinite sets,so you can`t count them per say,
+
+but you can diveded them into packets and you could try to count each packet and see how things gone
+
+and this proves to be a very attractive idea for about 30 seconds,but you can`t really get much further than that 
+
+and the big question on the subject was how you could possibly count, and in fact,Wiles introduced the correct technique.
+
+Andrew`s trick was to transform the elliptic curves into something called Galois representations.
+
+which would make counting easier.
+
+Now it was a question of comparing modular forms with Galois representations,not elliptic curves.
+
+Now you might ask and it`s an obvious question,why can`t you do this with elliptic curves and modular forms,
+
+why couldn`t you count elliptic curves,count modular forms,show ther`re the same number?
+
+Well,the answer is people thied and they never found a way of counting,and this was why this is key breakthrough,
+
+that I found a way to count not the original problem,but the modified problem.
+
+I found a way to count modular forms and Galoisrepresentation.
+
+This is only the first step and have already taken 3 years of Andrew`s life.
+
+My wife`s only konwn me while I`ve been working on Fermat.
+
+I told her a few days after we got married.I decided that I really only had time for my problem and my family.
+
+So I`d found this wonderful counting mechanism and I stated thinking about this concrete problem in terms of lwasawa theory.
+
+Iwasawa theory was the student subject I`d studied as a graduate student and 
+
+in fact with my advisor,JOHN COATES,I`d used it to analyse elliptic curves.
+
+Iwasawa theory was supposed to help create something called a class umber formula.
+
+but several months passed and the class number formula remained out of reach.
+
+So,at the end of the summer of `91 I was at a conference.
+
+JOHN COATES told me about a wonderful new paper of Matthias Flach. a student of his,in which he had tackled c class number formula.
+
+in fact exactly the class number formula I needed.
+
+so Flach,using ideas of Kolyvagin,had made a very significant first step,in actually producing the class number formula.
+
+So at that point I thought this is just what I need,this is tailor-made for the problem.
+
+I put aside completely the old approach I`d been trying and I devoted myself day and night to extending his result.
+
+Andrew was almost there,but his breakthrough was risky and complicated.
+
+Ather six years of secrecy,he needed to confide in someone.
+
+January of 1993 Andrea came up to me one day at tea,asked me if I could come up to his office,
+
+there was something he wanted to talk to me about.I had no idea what,what this could be.
+
+Went up to his office,he closed the door,he said he thought he would be able to prove Taniyama-Shimura.
+
+I was just amazed,this was fantastic.
+
+It involved a kind of mathematics that NICK KATZ is an expert in.
+
+I think another reason he asked me was that he was suer I would not tell other people,
+
+I would keep my mouth shut,which I did.
+
+ANDERW WILES and NICK KATZ had been spending rather a lot of time,
+
+huddled over a coffee table at the far end of common room working on some problem or other.We never knew what it was.
+
+In order not to arouse any more suspicion,Andrew decided to check his proof by disguising it in a course of lecture which
+NICK KATZ could than attend.
+
+Well I explained at the beginning of the course that Flach had written this beautiful paper.
+
+and I wanted to try to extend it to prove the full class number formula.
+
+The only thing I didn`t explain was that proving the class number formula was most of the way to Fermat`s last theorem.
+
+So this course was announced.It said calculations on elliptic curves,which could mean anything.
+
+Didn`t mention Fermat,didn`t mention Taniyama-Shimura,
+
+there was no way in the world anyone could have guessed that it was about that,if you didn`t already konw.
+
+None of the graduate students kenw and in a few weeks they just drifted off.
+
+because it`s impossible to follow stuff if you don`t know what it`s for,pretty much.
+
+It`s pretty hard even if you do konw what`s if for,but after a few weeks I was the only guy in the audience.
+
+The lectures revealed no errors and still none of his colleagues suspected why Andrew was being so secretive.
+
+Maybe he`s run out of ideas. That`s why he`s quiet,you never konw why ther`re quiet.
+
+The proof was still missing a vital ingredient.
+
+but Andrew now felt confident.
+
+It was time to tell one more person.
+
+So I called up Peter and asked him if I could come round and talk to him about something.
+
+I got a phone call from Andrew saying that he had something very important he wanted to chat to me about.
+
+and sure enough he had some very exciting news.
+
+I said I think you better sit down for this.
+
+I said I think I`m about to prove Fermat`s last throrem.
+
+I was flabbergasted,excited,disturbed.
+
+I mean I remember that night finding it quit difficult to sleep.
+
+But there was still a problem.
+
+Late in the spring of `93 I was in this very awkward position and I thought I`d got most of the curves to te modular.
+
+so that was nearly enough to be content to have Fermat`s last theorem.
+
+but there was this,there few families of elliptic curves that had escaped the net.
+
+I was sitting here at my desk in May of`93,still wondering about this problem.
+
+and I was casually glancing at paper BARRY MAZUR`s
+
+and there was just one sentence which made a reference to actually what`s a 19th-century construction.
+
+and I just instantly realized that there was a trick that I could use,
+
+that I could switch from the families of elliptic curves I`d been using
+
+I`d been studying them using the prime three.
+
+I could switch and study them using the prime five.
+
+It looked more complicated,but I could switch from these awkward curves
+
+that I couldn`t prove were modular,to a different set of curves which I`d already proved were modular.
+
+and use that information to just go that one last step.
+
+I just kept working out the details.
+
+time went by and I forgot to go down to lunch.
+
+It got to about teatime,I went down and Nada was very surprised that I`d arrived so late.
+
+and then I told her that I,I believed I`d solved Fermat`s last theorem.
+
+I was convinced that I had Fermat in my hands
+
+and there was a conference in Cambridge organised by my advisor,JOHN COATES.
+
+I thought that would be a wonderful place.
+
+It`s my old home town,I`d been a graduate student there,be a wonderful place to talk about it if I could get it in
+good shape.
+
+The name of the lectures that he announced was simply Elliptic curves and modular forms.
+
+There was no mention of Fermat`s last theorem.
+
+Well I was at this conference on L functions and elliptic curves.
+
+and it was kind of a standard conference and all of the people were there.
+
+didn`t seem to be anything out of the ordinary.
+
+until people started telling me that they`d been hearing weird rumours about ANDERW WILE`s proposed series of lecture.
+
+I started talking to people and I got more and more precise information.I`ve no idea how it was spread.
+
+Not from me.
+
+Whenever any piece of mathematical news had been in the air,
+
+Peter would say ot that`s nothing,wait until you hear the bing news.
+
+there`s something bing going to break.
+
+Maybe some hints,yeah.
+
+People would ask me leading up to my lectures what exactly I was going to say.
+
+and I said,come to my lecture and see.
+
+It was a very charged atmosphere,a lot of major figures of arithmetical algebraic geometry were there.
+
+Well I`d never seen a lecture series in mathematics like that before.
+
+What was unique about those lecture were the glorious ides.
+
+how many new ideas were presented,and the constancy of his dramatic build-up that was suspenseful until the enc.
+
+There was this marvellous moment when we were coming close to a proof of Fermat`s last theorem.
+
+and the tension had build up and there was only one possible punchline.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
